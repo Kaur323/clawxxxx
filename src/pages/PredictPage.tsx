@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import lobsterImg from "@/assets/lobster.png";
 
 const categories = ["热门", "政策", "经济", "..."];
 
