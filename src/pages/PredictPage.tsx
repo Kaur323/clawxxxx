@@ -33,22 +33,27 @@ const PredictPage = () => {
   return (
     <div className="space-y-4 px-4 pb-4">
       {/* Delegation Card */}
-      <div className="card-glass p-5">
+      <div className="relative overflow-hidden rounded-2xl border border-primary/60 bg-card/80 p-5" style={{ boxShadow: '0 0 20px hsl(var(--primary) / 0.15)' }}>
         <h2 className="text-lg font-bold text-foreground">预测委托</h2>
         <p className="mt-1 text-sm text-secondary-color">
           XClaw预测市场AI智能体，帮您实现自动化收益
         </p>
-        <div className="mt-3 flex flex-wrap gap-2">
-          <span className="rounded-full bg-primary/15 px-3 py-1 text-xs text-primary">
+        <div className="mt-3 flex flex-col gap-2">
+          <span className="w-fit rounded-full bg-primary/15 px-3 py-1 text-xs text-primary">
             委托金额：<span className="font-bold">$1000</span>等价值XClaw
           </span>
-          <span className="rounded-full bg-primary/15 px-3 py-1 text-xs text-primary">
+          <span className="w-fit rounded-full bg-primary/15 px-3 py-1 text-xs text-primary">
             预期APR：<span className="font-bold">9~27%</span>
           </span>
         </div>
-        <div className="mt-3 flex justify-end">
-          <span className="text-4xl">🦞</span>
-        </div>
+        <img
+          src={lobsterImg}
+          alt="XClaw mascot"
+          className="absolute bottom-2 right-2 h-24 w-24 object-contain opacity-90"
+          loading="lazy"
+          width={96}
+          height={96}
+        />
       </div>
 
       {/* My Delegation */}
